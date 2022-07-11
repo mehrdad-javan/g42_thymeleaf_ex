@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Form</title>
+</head>
+<body>
+    <h3>Contact List</h3>
+    <ul>
+        <li th:each="email : ${contacts}"><span th:text="${email}"></span></li>
+    </ul>
+
+<hr>
+<a th:href="@{/contact}" >Contact Form</a>
+</body>
+</html>
